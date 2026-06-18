@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Estilo CSS -->
+    <link rel="stylesheet" href="./styles/css/estilos.css">
+
+    <!-- Enlaces a Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <title>Inicio</title>
+</head>
+
+<body>
+
+    <!-- Contenido del Header -->
+    <header class="header-sella d-flex flex-column flex-md-row align-items-center justify-content-between py-4 px-5 mb-4 gap-3">
+
+        <!-- Logo -->
+        <div class="d-flex align-items-center gap-3">
+            <a href="./index.html" style="cursor: pointer;">
+                <img src="./index.html" alt="Logo Fiestas De La Blanca" class="img-fluid" style="max-height: 150px; width: auto;">
+            </a>
+        </div>
+
+        <!-- Navbar -->
+        <div class="d-flex flex-column flex-sm-row align-items-center justify-content-center gap-4 w-100 w-md-auto justify-content-md-end">
+            <ul class="nav justify-content-center gap-4 align-items-center">
+                <li>
+                    <a href="./index.html" class="nav-link p-0 text-white"><b>Inicio</b></a>
+                </li>
+                <li>
+                    <a href="./portfolio/informacion.html" class="nav-link p-0 text-white"><b>Información</b></a>
+                </li>
+                <li>
+                    <a href="./portfolio/contacto.html" class="nav-link p-0 text-white"><b>Contacto</b></a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Contenido principal de la página -->
+    <main class="d-flex flex-column gap-4 container">
+
+        <div class="text-center">
+            <h1>Fiestas de la Virgen Blanca</h1>
+        </div>
+
+        <div id="carrusel-principal">
+            <div id="myCarousel" class="carousel slide carousel-control-dark mb-6 w-100 mx-auto" data-bs-ride="carousel">
+
+                <!-- Indicadores -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                </div>
+
+                <!-- Slides -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./img/Inicio_Fiestas.png" class="d-block w-100" alt="Imagen de la comparsa">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/Blusas_Neskas.png" class="d-block w-100" alt="Imagen de las blusas y los neskas">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/Bailes_Fiestas.png" class="d-block w-100" alt="Imagen bailes tradicionales">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/Velas_Blancas.png" class="d-block w-100" alt="Imagen gente con velas">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/Fin_Fiestas.png" class="d-block w-100" alt="Imagen ultimo dia de la fiesta">
+                    </div>
+                </div>
+
+                <!-- Controles del carrusel -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+
+                <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Cards con Imagenes-->
+        <div class="row" id="cards_carrusel" style="gap:20px; width: 100%; justify-content: center; ">
+            <div class="card" style="width: 18rem;">
+                <img src="./img/Bajada_Celedon.png" class="card-img-top" alt="Imagen de Celedon descendiendo sobre la plaza">
+                <div class="card-body">
+                    <p class="card-text">Celedon Bajando a la plaza con el paraguas</p>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <img src="./img/Bailes_Fiestas.png" class="card-img-top" alt="Imagen de bailes tradicionales">
+                <div class="card-body">
+                    <p class="card-text">Bailes tradicioneales de la fiesta</p>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <img src="./img/Blusas_Neskas.png" class="card-img-top" alt="Imagen de las cuadrillas">
+                <div class="card-body">
+                    <p class="card-text">Blusas y Neskas disfrutando de la celebracion</p>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <img src="./img/Fin_Fiestas.png" class="card-img-top" alt="Imagen de la verbena de fin de fiesta">
+                <div class="card-body">
+                    <p class="card-text">Verbena del final de la festividad</p>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <img src="./img/Inicio_Fiestas.png" class="card-img-top" alt="Imagen de las Fiestas">
+                <div class="card-body">
+                    <p class="card-text">Los cabezones amenizando la fiesta</p>
+                </div>
+            </div>  
+
+            <div class="card" style="width: 18rem;">
+                <img src="./img/Velas_Blancas.png" class="card-img-top" alt="Velas Blancas">
+                <div class="card-body">
+                    <p class="card-text">Grupo de gente con velas adorando a la virgen</p>
+                </div>
+            </div>  
+        </div>
+    </main>
+
+        <!-- Footer -->
+        <footer class="bg-dark text-white py-3 row mb-6 mb-0" style="margin-top: 20px;"> 
+            <div class="row g-4">
+                <div class="col-md-8 d-flex flex-column gap-4">
+                    <p class="text-white-50 mb-0 text-center">© 2026 Fiestas de la Virgen Blanca - Página Informativa</p> 
+                </div>
+                <div class="col-md-4 d-flex flex-md-row gap-4 mb-6 redes_sociales">
+                    <a href="https://www.instagram.com">
+                        <img src="./img/Logo_Instagram.svg">
+                    </a>
+                    <a href="https://www.facebook.com">
+                        <img src="./img/Logo_Facebook.png">
+                    </a>
+                    <a href="https://www.X.com">
+                        <img src="./img/Logo_Twitter.png">
+                    </a>
+                </div>
+            </div>
+        </footer>
+    
+</body>
+
+</html>
